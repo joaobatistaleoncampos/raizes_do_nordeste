@@ -1,0 +1,179 @@
+ /*  LIMPAR FORMATAÇÕES*/
+ * {
+   margin: 0;
+   padding: 0;
+ }
+
+ body {
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   background-color: rgba(185, 191, 152, 0.267);
+ }
+
+ header {
+   width: 100vw;
+   /* ocupa toda a largura da janela */
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   /* evita barra de rolagem lateral */
+   height: 350px;
+
+ }
+
+ /* 
+header picture {
+  display: block;
+  width: 100%;
+} */
+
+ header img {
+  height: 350px;
+   margin-left: 500px;
+
+ }
+
+ header h1 .white {
+   color: white;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif;
+ }
+
+ .sublogo {
+   text-align: center;
+   margin: 25px;
+ }
+
+ nav button {
+   width: 300px;
+   height: 60px;
+   background: rgb(141, 125, 86);
+   /* margin: 12px; */
+   /* margin-left: 20px; */
+   margin: auto;
+
+
+ }
+
+ nav button:hover {
+   background-color: white;
+ }
+
+ nav {
+   display: flex;
+   justify-content: center;
+   /* centraliza os botões */
+   gap: 0;
+   /* espaço entre eles */
+   flex-wrap: wrap;
+ }
+
+ nav button a {
+   text-decoration: none;
+ }
+
+ nav a:link,
+ a:visited {
+   color: black;
+   font-size: 15px;
+   font-family: 'Times New Roman', Times, serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif;
+ }
+
+ main {
+   display: flex;
+   /* Coloca os elementos lado a lado */
+   justify-content: space-around;
+   /* Espaço entre eles */
+   align-items: flex-start;
+   /* Alinha pelo topo */
+   max-width: 1200px;
+   margin: auto;
+   gap: 0;
+
+ }
+
+ main section img {
+   height: 412px;
+   width: 500px;
+ }
+
+ .conteudo {
+   margin: 10px;
+   text-align: center;
+ }
+
+ aside {
+   background: #dfddc8;
+   padding-left: 10px;
+   margin: 10px;
+ }
+
+ .perfil {
+   height: 412px;
+   width: 500px;
+ }
+
+ aside p {
+   text-indent: 10px;
+   font-size: 15px;
+ }
+
+ aside h2 {
+   text-align: center;
+ }
+
+ footer {
+   width: 1500px;
+   clear: both;
+   text-align: center;
+   padding: 15px;
+   background: rgb(141, 125, 86);
+   margin: 40px;
+ }
+
+ /* RESPONSIVIDADES   */
+
+ @media (max-width: 600px) {
+   header img {
+     height: 40vh;
+     /* reduz suavemente a altura */
+   }
+ }
+
+ /* Ajuste para telas menores */
+ @media (max-width: 600px) {
+   nav {
+     flex-direction: column;
+     align-items: center;
+   }
+
+   nav button {
+     width: 90%;
+     /* ocupa quase toda a largura da tela */
+     margin-bottom: 10px;
+   }
+ }
+
+ /* Responsividade para telas menores */
+ @media (max-width: 768px) {
+   main {
+     flex-direction: column;
+     /* empilha os elementos */
+     align-items: center;
+     /* centraliza */
+   }
+
+   section.conteudo img {
+     width: 90%;
+     /* ajusta a largura da imagem */
+     height: auto;
+   }
+
+   aside.perfil {
+     margin-top: 20px;
+     width: 90%;
+   }
+
+   footer {
+     width: 100%;
+     margin-left: 0;
+   }
+ }

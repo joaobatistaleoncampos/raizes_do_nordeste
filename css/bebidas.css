@@ -1,0 +1,83 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+   background: rgb(141, 125, 86);
+  color: #0d1810;
+  text-align: center;
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+}
+
+/* Container */
+.container {
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  width: 500px;
+  background: #fff;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Texto dentro do main */
+main p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+/* Menu de botões */
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: rgb(45, 234, 130);
+  border: 2px solid #000;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  
+}
+
+.btn:hover {
+  background: rgb(234, 158, 45);
+  color: #fff;
+}
+
+/* Inputs */
+input {
+  display: block;
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: rgb(45, 234, 130);
+  margin-top: 30px;
+  border-radius: 10px 10px 0 0;
+}
