@@ -119,6 +119,9 @@ header picture {
  aside h2 {
    text-align: center;
  }
+label{
+  margin-left: 50px;
+}
 
  footer {
    width: 1500px;
